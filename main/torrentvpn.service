@@ -1,5 +1,5 @@
 [Unit]
-Description=Makes sure torrent doesn't run without vpn
+Description=Makes sure torrent doesnt run without vpn
 After=network.target
 StartLimitIntervalSec=0
 [Service]
