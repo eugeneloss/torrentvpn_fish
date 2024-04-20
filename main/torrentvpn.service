@@ -1,13 +1,13 @@
 [Unit]
-Description=Test for vpn and torrent
+Description=Makes sure torrent doesn't run without vpn
 After=network.target
 StartLimitIntervalSec=0
 [Service]
 Type=simple
 Restart=always
 RestartSec=1
-User=alex
-ExecStart=/home/alex/github/torrentvpn/main/torrentvpn.sh
+User=%%user%%
+ExecStart=%%filepath%%
 
 [Install]
 WantedBy=multi-user.target
