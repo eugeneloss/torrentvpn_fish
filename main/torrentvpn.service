@@ -6,8 +6,8 @@ StartLimitIntervalSec=0
 Type=simple
 Restart=always
 RestartSec=1
-User=%%user%%
-ExecStart=%%filepath%%
+User=alex
+ExecStart=/home/alex/github/torrentvpn/main/torrentvpn.sh
 
 [Install]
 WantedBy=multi-user.target
