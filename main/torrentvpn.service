@@ -1,7 +1,9 @@
 [Unit]
-Description=Makes sure torrent doesnt run without vpn
+Description=Makes sure torrent doesn't run without VPN
 After=network.target
 StartLimitIntervalSec=0
+
+
 [Service]
 Type=simple
 Restart=always
@@ -9,6 +11,6 @@ RestartSec=1
 User=%%user%%
 ExecStart=%%filepath%%
 
+
 [Install]
 WantedBy=multi-user.target
-
